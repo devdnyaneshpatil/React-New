@@ -6,7 +6,7 @@ function Todos() {
     const [todoList, setTodoList] = useState([])
     const handleAddTodo=(todo)=>{
         setTodoList([...todoList,todo])
-    }
+    } 
   return (
     <div>
         <TodosInput addTodo={handleAddTodo} />
