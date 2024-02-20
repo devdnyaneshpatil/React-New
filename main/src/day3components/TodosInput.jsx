@@ -3,6 +3,7 @@ import {v4 as uuid} from "uuid"
 
 function TodosInput({addTodo}) {
     const [todo, setTodo] = useState('')
+    const [isChecked, setIsChecked]=useState(false)
   return (
     <form onSubmit={(e)=>{
         e.preventDefault()
@@ -14,7 +15,7 @@ function TodosInput({addTodo}) {
             const payload={
                 id:uuid(),
                 text:todo,
-                status:'false'
+                status:false
             }
             addTodo(payload)
             setTodo("")

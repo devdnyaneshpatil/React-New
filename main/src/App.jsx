@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import './App.css'
-import Day3 from './components/Day3'
+import Day4 from './components/Day4'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <Day3/>
+    <Day4/>
     </>
   )
 }
